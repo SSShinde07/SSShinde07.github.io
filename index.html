@@ -47,8 +47,13 @@
     }
     .project-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 30px;
+    }
+    @media (min-width: 1024px) {
+      .project-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
     .project {
       background: #1e1e1e;
@@ -56,6 +61,10 @@
       border-radius: 10px;
       overflow: hidden;
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
     }
     .project img {
       width: 100%;
