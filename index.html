@@ -54,10 +54,14 @@
       background: #1e1e1e;
       padding: 20px;
       border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
     .project img {
       width: 100%;
       border-radius: 5px;
+      max-height: 200px;
+      object-fit: cover;
     }
     .project h3 {
       margin-top: 15px;
@@ -95,18 +99,21 @@
   <section id="projects">
     <div class="section-title">Projects</div>
     <div class="project-grid">
+
       <div class="project">
-        <img src="https://source.unsplash.com/600x300/?data,sql" alt="HR Analytics" />
+        <img src="https://images.unsplash.com/photo-1581092795360-6a9573b51b4b?fit=crop&w=800&q=80" alt="HR Analytics" />
         <h3>HR Analytics Dashboard</h3>
         <p>Analyzed employee attrition, created Power BI dashboards to improve retention and engagement using SQL + Excel.</p>
         <a href="https://github.com/SSShinde07/-HR-Analytics-Full-Project" class="button" target="_blank">View Project</a>
       </div>
+
       <div class="project">
-        <img src="https://source.unsplash.com/600x300/?pizza,charts" alt="Pizza Sales" />
+        <img src="https://images.unsplash.com/photo-1601924579530-0ec90cc5e0c2?fit=crop&w=800&q=80" alt="Pizza Sales" />
         <h3>Pizza Sales Analysis</h3>
         <p>Used Excel and Power BI to analyze pizza sales data and derive insights from KPIs and sales trends.</p>
         <a href="https://github.com/SSShinde07/Pizza-Sales-Projects" class="button" target="_blank">View Project</a>
       </div>
+
     </div>
   </section>
 
