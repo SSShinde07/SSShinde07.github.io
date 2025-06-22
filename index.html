@@ -1,59 +1,75 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Shubham Shinde — Data Analyst</title>
+  <title>Shubham Shinde | Data Analyst Portfolio</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-yH6hEf3o5LVzJ+R2Ow1ZczB2zEYZQF8FTN2wFg1YljTW5HfR+F0S9UPh/9bQFv35H6j8WeZ7ZVAn45chJl5PAA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; color:#333; }
-    header { background: #0077b6 url('https://source.unsplash.com/1600x400/?data,analytics') no-repeat center/cover; color:#fff; padding:100px 20px; text-align:center; }
-    header h1 { margin:0; font-size:3em; }
-    header p { font-size:1.2em; max-width:600px; margin:10px auto; }
-    section { padding:60px 20px; max-width:900px; margin:0 auto; }
-    h2 { margin-bottom:20px; border-bottom:2px solid #0077b6; display:inline-block; padding-bottom:5px; }
-    .projects { display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
-    .project { border:1px solid #ddd; padding:20px; border-radius:4px; background:#fafafa; }
-    .project h3 { margin-top:0; }
-    .project a.button { display:inline-block; margin-top:10px; padding:10px 15px; background:#0077b6; color:#fff; text-decoration:none; border-radius:4px; }
-    footer { text-align:center; padding:20px; background:#f0f0f0; }
-    footer a { color:#0077b6; text-decoration:none; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f7f7f7; color: #333; line-height: 1.6; }
+    header { background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover; height: 100vh; color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
+    header h1 { font-size: 3em; margin-bottom: 10px; }
+    header p { font-size: 1.2em; max-width: 700px; }
+
+    nav { background: #fff; padding: 10px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; }
+    nav a { margin: 0 15px; text-decoration: none; color: #0077b6; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    section h2 { font-size: 2em; color: #0077b6; margin-bottom: 20px; text-align: center; }
+    .project-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .project { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .project h3 { margin-bottom: 10px; color: #0077b6; }
+    .project p { margin-bottom: 15px; }
+    .project a { text-decoration: none; color: white; background: #0077b6; padding: 10px 15px; border-radius: 5px; display: inline-block; }
+    .project a:hover { background: #005f8a; }
+
+    footer { text-align: center; padding: 20px; background: #0077b6; color: white; margin-top: 40px; }
+    footer a { color: #fff; text-decoration: underline; }
   </style>
 </head>
 <body>
 
   <header>
     <h1>Shubham Shinde</h1>
-    <p>Data Analyst</p>
-    <p>A hospitality student who has transformed himself into a data analyst skilled in SQL, Power BI, Tableau, Python, Advanced Excel.</p>
+    <p>Hospitality Student turned Data Analyst | SQL • Power BI • Tableau • Python • Excel</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="mailto:shubham.sshinde04@gmail.com">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
-    <p>Based in Mumbai, Maharashtra — I enjoy turning raw data into actionable insights to help organizations make better decisions.</p>
-    <p>📫 Reach out: <a href="mailto:shubham.sshinde04@gmail.com">shubham.sshinde04@gmail.com</a> • <a href="http://linkedin.com/in/shubham-s-shinde01" target="_blank">LinkedIn</a> • <a href="https://github.com/SSShinde07" target="_blank">GitHub</a></p>
+    <p style="text-align:center; max-width:700px; margin:auto;">Based in Mumbai, Maharashtra, I specialize in turning complex data into visual stories using tools like Power BI, SQL, and Python. Passionate about data-driven decisions and performance insights in BFSI and contact center domains.</p>
+    <p style="text-align:center; margin-top:10px;">
+      📧 <a href="mailto:shubham.sshinde04@gmail.com">shubham.sshinde04@gmail.com</a> •
+      <a href="https://linkedin.com/in/shubham-s-shinde01" target="_blank">LinkedIn</a> •
+      <a href="https://github.com/SSShinde07" target="_blank">GitHub</a>
+    </p>
   </section>
 
-  <section>
+  <section id="projects">
     <h2>Projects</h2>
-    <div class="projects">
-
+    <div class="project-list">
       <div class="project">
         <h3>HR Analytics</h3>
-        <p>Welcome to my data analyst project, where I used a variety of tools to derive insights from employee data and create a comprehensive dashboard for employee retention analysis.</p>
-        <a class="button" href="https://github.com/SSShinde07/-HR-Analytics-Full-Project" target="_blank">View on GitHub</a>
+        <p>Derived insights from employee data to build a dashboard for retention analysis using SQL, Excel, and Power BI.</p>
+        <a href="https://github.com/SSShinde07/-HR-Analytics-Full-Project" target="_blank">View Project</a>
       </div>
-
       <div class="project">
         <h3>Pizza Sales Analysis</h3>
-        <p>This project focuses on analyzing pizza sales data to derive insights and create a dashboard for key performance indicators (KPIs).</p>
-        <a class="button" href="https://github.com/SSShinde07/Pizza-Sales-Projects" target="_blank">View on GitHub</a>
+        <p>Analyzed pizza sales to understand performance metrics and built a KPI dashboard in Power BI.</p>
+        <a href="https://github.com/SSShinde07/Pizza-Sales-Projects" target="_blank">View Project</a>
       </div>
-
     </div>
   </section>
 
   <footer>
-    © 2025 Shubham Shinde • Built with ❤️ in HTML & CSS
+    <p>&copy; 2025 Shubham Shinde — Portfolio Built with HTML & CSS</p>
   </footer>
 
 </body>
