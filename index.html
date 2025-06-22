@@ -1,75 +1,123 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Shubham Shinde | Data Analyst Portfolio</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-yH6hEf3o5LVzJ+R2Ow1ZczB2zEYZQF8FTN2wFg1YljTW5HfR+F0S9UPh/9bQFv35H6j8WeZ7ZVAn45chJl5PAA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shubham Shinde | Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f7f7f7; color: #333; line-height: 1.6; }
-    header { background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover; height: 100vh; color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
-    header h1 { font-size: 3em; margin-bottom: 10px; }
-    header p { font-size: 1.2em; max-width: 700px; }
-
-    nav { background: #fff; padding: 10px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; }
-    nav a { margin: 0 15px; text-decoration: none; color: #0077b6; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-
-    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
-    section h2 { font-size: 2em; color: #0077b6; margin-bottom: 20px; text-align: center; }
-    .project-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-    .project { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    .project h3 { margin-bottom: 10px; color: #0077b6; }
-    .project p { margin-bottom: 15px; }
-    .project a { text-decoration: none; color: white; background: #0077b6; padding: 10px 15px; border-radius: 5px; display: inline-block; }
-    .project a:hover { background: #005f8a; }
-
-    footer { text-align: center; padding: 20px; background: #0077b6; color: white; margin-top: 40px; }
-    footer a { color: #fff; text-decoration: underline; }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #121212;
+      color: #f0f0f0;
+    }
+    header {
+      text-align: center;
+      padding: 100px 20px;
+      background: radial-gradient(circle at top, #1f1f1f, #121212);
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      font-style: italic;
+      color: #ccc;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      border: 2px solid #fff;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      transition: background 0.3s ease;
+    }
+    .button:hover {
+      background: white;
+      color: black;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .project {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .project img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .project h3 {
+      margin-top: 15px;
+      color: #fff;
+    }
+    .project p {
+      color: #bbb;
+    }
+    footer {
+      background: #1f1f1f;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    footer a {
+      margin: 0 10px;
+      color: #00b4d8;
+      text-decoration: none;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 40px;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Shubham Shinde</h1>
-    <p>Hospitality Student turned Data Analyst | SQL • Power BI • Tableau • Python • Excel</p>
+    <h1>Shubham Shinde's Portfolio</h1>
+    <p>A hospitality student turned data analyst skilled in SQL, Power BI, Tableau, Python & Excel</p>
+    <a href="#projects" class="button">PORTFOLIO</a>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="mailto:shubham.sshinde04@gmail.com">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p style="text-align:center; max-width:700px; margin:auto;">Based in Mumbai, Maharashtra, I specialize in turning complex data into visual stories using tools like Power BI, SQL, and Python. Passionate about data-driven decisions and performance insights in BFSI and contact center domains.</p>
-    <p style="text-align:center; margin-top:10px;">
-      📧 <a href="mailto:shubham.sshinde04@gmail.com">shubham.sshinde04@gmail.com</a> •
-      <a href="https://linkedin.com/in/shubham-s-shinde01" target="_blank">LinkedIn</a> •
-      <a href="https://github.com/SSShinde07" target="_blank">GitHub</a>
-    </p>
-  </section>
-
   <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-list">
+    <div class="section-title">Projects</div>
+    <div class="project-grid">
       <div class="project">
-        <h3>HR Analytics</h3>
-        <p>Derived insights from employee data to build a dashboard for retention analysis using SQL, Excel, and Power BI.</p>
-        <a href="https://github.com/SSShinde07/-HR-Analytics-Full-Project" target="_blank">View Project</a>
+        <img src="https://source.unsplash.com/600x300/?data,sql" alt="HR Analytics" />
+        <h3>HR Analytics Dashboard</h3>
+        <p>Analyzed employee attrition, created Power BI dashboards to improve retention and engagement using SQL + Excel.</p>
+        <a href="https://github.com/SSShinde07/-HR-Analytics-Full-Project" class="button" target="_blank">View Project</a>
       </div>
       <div class="project">
+        <img src="https://source.unsplash.com/600x300/?pizza,charts" alt="Pizza Sales" />
         <h3>Pizza Sales Analysis</h3>
-        <p>Analyzed pizza sales to understand performance metrics and built a KPI dashboard in Power BI.</p>
-        <a href="https://github.com/SSShinde07/Pizza-Sales-Projects" target="_blank">View Project</a>
+        <p>Used Excel and Power BI to analyze pizza sales data and derive insights from KPIs and sales trends.</p>
+        <a href="https://github.com/SSShinde07/Pizza-Sales-Projects" class="button" target="_blank">View Project</a>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Shubham Shinde — Portfolio Built with HTML & CSS</p>
+    <p><strong>Location:</strong> Mumbai, Maharashtra</p>
+    <p><strong>Email:</strong> <a href="mailto:shubham.sshinde04@gmail.com">shubham.sshinde04@gmail.com</a></p>
+    <p><strong>Social:</strong>
+      <a href="https://linkedin.com/in/shubham-s-shinde01" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/SSShinde07" target="_blank">GitHub</a>
+    </p>
+    <p>© 2025 Shubham Shinde</p>
   </footer>
 
 </body>
