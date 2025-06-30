@@ -14,7 +14,7 @@
     }
     header {
       text-align: center;
-      padding: 100px 20px 60px;
+      padding: 100px 20px;
       background: radial-gradient(circle at top, #1f1f1f, #121212);
     }
     header h1 {
@@ -26,25 +26,31 @@
       font-style: italic;
       color: #ccc;
     }
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      border: 2px solid #fff;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      transition: background 0.3s ease;
+    }
+    .button:hover {
+      background: white;
+      color: black;
+    }
     section {
       padding: 50px 20px;
       max-width: 1200px;
       margin: auto;
     }
-    .section-title {
-      text-align: center;
-      font-size: 2em;
-      margin-bottom: 40px;
-      color: #fff;
-    }
-
     .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
+      gap: 30px;
     }
-
     .project {
       background: #1e1e1e;
       padding: 20px;
@@ -52,6 +58,9 @@
       overflow: hidden;
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
       transition: transform 0.3s ease;
+      width: calc(33.33% - 20px);
+      max-width: 360px;
+      box-sizing: border-box;
     }
     .project:hover {
       transform: translateY(-5px);
@@ -69,22 +78,16 @@
     .project p {
       color: #bbb;
     }
-
-    .skills-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
+    @media (max-width: 1024px) {
+      .project {
+        width: calc(50% - 20px);
+      }
     }
-    .skill {
-      background: #1e1e1e;
-      padding: 12px 20px;
-      border-radius: 10px;
-      font-weight: bold;
-      color: #eee;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    @media (max-width: 768px) {
+      .project {
+        width: 100%;
+      }
     }
-
     footer {
       background: #1f1f1f;
       padding: 40px 20px;
@@ -95,81 +98,70 @@
       color: #00b4d8;
       text-decoration: none;
     }
+    .section-title {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 40px;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
   <header>
     <h1>Shubham Shinde's Portfolio</h1>
-    <p>Data Analyst skilled in Power BI, SQL, Excel, Tableau, Looker Studio & Python</p>
+    <p>A hospitality student turned data analyst skilled in SQL, Power BI, Tableau, Python & Excel</p>
+    <a href="#projects" class="button">PORTFOLIO</a>
   </header>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="section-title">Skills</div>
-    <div class="skills-container">
-      <div class="skill">Looker Studio</div>
-      <div class="skill">Power BI</div>
-      <div class="skill">Tableau</div>
-      <div class="skill">Excel & Sheets</div>
-      <div class="skill">SQL</div>
-      <div class="skill">Python</div>
-      <div class="skill">Verint</div>
-      <div class="skill">Microsoft Office</div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
   <section id="projects">
     <div class="section-title">Projects</div>
     <div class="project-grid">
 
-      <!-- HR Analytics -->
+      <!-- 1: HR Analytics Project -->
       <div class="project">
         <img src="assets/hr-analytics.png" alt="HR Analytics Dashboard" />
         <h3>HR Analytics Dashboard</h3>
-        <p>Created a Power BI dashboard with SQL data to track attrition, engagement, and hiring trends.</p>
+        <p>Created a dashboard using Power BI and SQL to track key HR metrics like attrition, engagement, and hiring trends for better decision-making.</p>
         <a href="https://github.com/SSShinde07/-HR-Analytics-Full-Project" class="button" target="_blank">View Project</a>
       </div>
 
-      <!-- Pizza Sales -->
+      <!-- 2: Pizza Sales Project -->
       <div class="project">
         <img src="assets/pizza-sales.png" alt="Pizza Sales Analysis" />
         <h3>Pizza Sales Analysis</h3>
-        <p>Used Excel and Power BI to analyze sales trends, KPIs, and time-based performance metrics.</p>
+        <p>Used Excel and Power BI to analyze pizza sales data and derive insights from KPIs and sales trends.</p>
         <a href="https://github.com/SSShinde07/Pizza-Sales-Projects" class="button" target="_blank">View Project</a>
       </div>
 
-      <!-- Contact Center SQL -->
+      <!-- 3: Contact Center SQL Project -->
       <div class="project">
         <img src="assets/call-center.png" alt="Contact Center SQL Project" />
         <h3>Contact Center SQL Project</h3>
-        <p>Created and queried MySQL database to evaluate agent performance and call trends using joins and windows.</p>
+        <p>Designed and queried a contact center database in MySQL, analyzing call logs, agent performance, and escalations through advanced SQL queries and views.</p>
         <a href="https://github.com/SSShinde07/Contact-Center-SQL-Project" class="button" target="_blank">View Project</a>
       </div>
 
-      <!-- Python EDA -->
+      <!-- 4: Contact Center Python Project -->
       <div class="project">
         <img src="assets/CC_python.png" alt="Contact Center Python EDA" />
-        <h3>Python EDA – Contact Center</h3>
-        <p>Performed data analysis using Pandas, Matplotlib, and Seaborn to draw business insights from call data.</p>
+        <h3>Contact Center Python EDA</h3>
+        <p>Performed EDA and data visualization on contact center datasets using Python (Pandas, Matplotlib, Seaborn) with insights on call volumes, agent performance, and customer feedback.</p>
         <a href="https://github.com/SSShinde07/contact-center-python-project" class="button" target="_blank">View Project</a>
       </div>
 
-      <!-- Real Estate Campaign -->
+      <!-- 5: Real Estate Campaign Project -->
       <div class="project">
         <img src="assets/realestate.png" alt="Real Estate Campaign Dashboard" />
         <h3>Real Estate Campaign Dashboard</h3>
-        <p>Built a Looker Studio dashboard to track conversions, channel ROI, and campaign success from Excel data.</p>
+        <p>Built with Looker Studio and Excel, this dashboard analyzes real estate campaign performance, platform-wise conversions, and ROI metrics.</p>
         <a href="https://lookerstudio.google.com/reporting/YOUR_REPORT_ID" class="button" target="_blank">View Dashboard</a>
-        <a href="https://github.com/SSShinde07/Real-Estate-Campaign-Dashboard" class="button" target="_blank">GitHub Repo</a>
+        <a href="https://github.com/SSShinde07/Real-Estate-Campaign-Dashboard" class="button" target="_blank">View GitHub Repo</a>
       </div>
 
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <p><strong>Location:</strong> Mumbai, Maharashtra</p>
     <p><strong>Email:</strong> <a href="mailto:shubham.sshinde04@gmail.com">shubham.sshinde04@gmail.com</a></p>
