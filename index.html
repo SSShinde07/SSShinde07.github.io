@@ -47,13 +47,8 @@
     }
     .project-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 30px;
-    }
-    @media (min-width: 1024px) {
-      .project-grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
     }
     .project {
       background: #1e1e1e;
@@ -139,6 +134,15 @@
         <h3>Contact Center Python EDA</h3>
         <p>Performed EDA and data visualization on contact center datasets using Python (Pandas, Matplotlib, Seaborn) with insights on call volumes, agent performance, and customer feedback.</p>
         <a href="https://github.com/SSShinde07/contact-center-python-project" class="button" target="_blank">View Project</a>
+      </div>
+
+      <!-- Real Estate Campaign Project -->
+      <div class="project">
+        <img src="assets/realestate.png" alt="Real Estate Campaign Dashboard" />
+        <h3>Real Estate Campaign Dashboard</h3>
+        <p>Built with Looker Studio and Excel, this dashboard analyzes real estate campaign performance, platform-wise conversions, and ROI metrics.</p>
+        <a href="https://lookerstudio.google.com/reporting/YOUR_REPORT_ID" class="button" target="_blank">View Dashboard</a>
+        <a href="https://github.com/SSShinde07/Real-Estate-Campaign-Dashboard" class="button" target="_blank">View GitHub Repo</a>
       </div>
 
     </div>
